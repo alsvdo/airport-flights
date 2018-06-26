@@ -1,0 +1,13 @@
+.filters {
+}
+
+.flight-type {
+    margin-bottom: 10px;
+    &__name {
+        margin-left: 5px;
+    }
+
+    &:last-of-type {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.flight {
+    background-color: #fff;
+
+    &:nth-of-type(2n) {
+        background-color: #e6e6e6;
+    }
+
+    &__cell {
+        padding: 10px $gutter;
+    }
+}
