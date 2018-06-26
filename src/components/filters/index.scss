@@ -1,13 +1,33 @@
+@import '../../styles/variables';
+
 .filters {
+    &__bar {
+        display: flex;
+        align-items: center;
+        margin: $gutter 0;
+        justify-content: space-between
+    }
 }
 
 .flight-type {
-    margin-bottom: 10px;
+    margin-bottom: $gutter;
+    display: block;
+    cursor: pointer;
+    
     &__name {
         margin-left: 5px;
     }
 
-    &:last-of-type {
-        margin-bottom: 50px;
+    &__input {
+        cursor: pointer;
     }
+    
+    &:last-of-type {
+        margin-bottom: 30px
+    }
+
+}
+
+.search {
+    width: 350px;
 }

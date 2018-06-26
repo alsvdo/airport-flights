@@ -1,6 +1,11 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
 
+export const flightTypes = {
+    DEPARTURE: 'departure',
+    ARRIVAL: 'arrival'
+}
+
 export function scrapeSite(url) {
     const promise = axios.get(`http://allorigins.me/get?url=${url}`)
         .then(response => {
