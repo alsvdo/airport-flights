@@ -7,7 +7,7 @@ export const flightTypes = {
 }
 
 export function scrapeSite(url) {
-    const promise = axios.get(`http://allorigins.me/get?url=${url}`)
+    const promise = axios.get(`https://allorigins.me/get?url=${url}`)
         .then(response => {
             const $ = cheerio.load(response.data.contents)
             const $flightTableRows = $('.flights__table .stylish-table__row--body')
