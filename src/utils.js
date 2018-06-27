@@ -11,7 +11,7 @@ export function scrapeSite(url) {
         .then(response => {
             const $ = cheerio.load(response.data.contents)
             const $flightTableRows = $('.flights__table .stylish-table__row--body')
-
+            
             const listOfFlights = []
             let counter = 0
 
@@ -38,4 +38,19 @@ export function scrapeSite(url) {
         })
 
     return promise
+}
+
+export function generateHours() {
+    const arr = []
+
+    for(let i = 0; i < 24; i++) {
+        const leadingZero = i < 10 ? 0 : ''
+
+        arr.push({
+            value: i,
+            label: `${leadingZero}${i}:00`
+        })
+    }
+
+    return arr
 }

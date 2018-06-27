@@ -1,6 +1,10 @@
 @import '../../styles/variables';
 
 .filters {
+    margin: $spacing 0;
+    border-bottom: 1px solid $grey;
+    padding-bottom: $gutter;
+    
     &__bar {
         display: flex;
         align-items: center;
@@ -11,8 +15,10 @@
 
 .flight-type {
     margin-bottom: $gutter;
-    display: block;
-    cursor: pointer;
+    
+    &__label {
+        cursor: pointer;
+    }
     
     &__name {
         margin-left: 5px;
@@ -29,5 +35,21 @@
 }
 
 .search {
-    width: 350px;
+    flex: 1;
+
+    &__input {
+        width: 250px;
+        border: 1px solid $grey;
+        padding: 10px $gutter;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+}
+
+.timepicker {
+    margin-right: $gutter;
+
+    &__input {
+        width: 150px;
+    }
 }

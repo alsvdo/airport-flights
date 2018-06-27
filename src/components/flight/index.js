@@ -1,5 +1,5 @@
 import './index.scss'
-import React, { Component } from 'react'
+import React from 'react'
 
 export default ({ data }) => (
     <tr className="flight">
